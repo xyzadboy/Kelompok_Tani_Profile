@@ -61,16 +61,7 @@ Fitur unggulan berupa Sistem Informasi Geografis (GIS) interaktif untuk memetaka
 
 Halaman manajemen internal (*backoffice*) yang digunakan oleh pengurus/admin untuk mengelola konten, data legalitas, galeri, kontak, hingga pemetaan spasial lahan.
 
-### 1. Manajemen Beranda & Konten Utamanya
-![Admin Beranda](assets/beranda_admin.png)
-
-**Deskripsi:**
-Pusat pengaturan konten utama halaman depan.
-* Mengelola statistik (*Quick Stats*), narasi sejarah, poin visi & misi, serta banner/hero section yang tampil di halaman publik.
-
----
-
-### 2. Manajemen Legalitas & Dokumen
+### 1. Manajemen Legalitas & Dokumen
 ![Admin Legalitas](assets/legalitas_admin.png)
 
 **Deskripsi:**
@@ -79,7 +70,7 @@ Modul pengarsipan dan publikasi dokumen legalitas.
 
 ---
 
-### 3. Manajemen Galeri Dokumentasi
+### 2. Manajemen Galeri Dokumentasi
 ![Admin Galeri](assets/galeri_admin.png)
 
 **Deskripsi:**
@@ -88,7 +79,7 @@ Panel pengolahan repositori galeri kegiatan.
 
 ---
 
-### 4. Manajemen Kontak & Pengurus
+### 3. Manajemen Kontak & Pengurus
 ![Admin Kontak](assets/kontak_admin.png)
 
 **Deskripsi:**
@@ -97,7 +88,7 @@ Panel pengelolaan informasi kontak dan data pengurus.
 
 ---
 
-### 5. Manajemen Data Spatial & Blok Lahan (GIS Admin)
+### 4. Manajemen Data Spatial & Blok Lahan (GIS Admin)
 ![Admin Blok Lahan](assets/blok_admin.png)
 
 **Deskripsi:**
