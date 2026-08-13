@@ -5,9 +5,8 @@ namespace App\Filament\Resources\Blocks\Tables;
 use Filament\Actions\BulkActionGroup;
 use Filament\Actions\DeleteBulkAction;
 use Filament\Actions\EditAction;
-use Filament\Tables\Table;
 use Filament\Tables\Columns\TextColumn;
-
+use Filament\Tables\Table;
 
 class BlocksTable
 {
@@ -15,7 +14,7 @@ class BlocksTable
     {
         return $table
             ->columns([
-                 TextColumn::make('kode_blok')
+                TextColumn::make('kode_blok')
                     ->label('Kode Blok')
                     ->searchable()
                     ->sortable(),

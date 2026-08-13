@@ -5,10 +5,9 @@ namespace App\Filament\Resources\ContactPeople\Tables;
 use Filament\Actions\BulkActionGroup;
 use Filament\Actions\DeleteBulkAction;
 use Filament\Actions\EditAction;
-use Filament\Tables\Table;
-use Filament\Tables\Columns\TextColumn;
 use Filament\Tables\Columns\ImageColumn;
-
+use Filament\Tables\Columns\TextColumn;
+use Filament\Tables\Table;
 
 class ContactPeopleTable
 {
@@ -21,7 +20,7 @@ class ContactPeopleTable
                 TextColumn::make('nomor'),
                 TextColumn::make('email'),
                 ImageColumn::make('foto'),
-                TextColumn::make('deskripsi')
+                TextColumn::make('deskripsi'),
             ])
             ->filters([
                 //

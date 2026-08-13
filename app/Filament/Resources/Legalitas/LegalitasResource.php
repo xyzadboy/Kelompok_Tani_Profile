@@ -5,16 +5,15 @@ namespace App\Filament\Resources\Legalitas;
 use App\Filament\Resources\Legalitas\Pages\CreateLegalitas;
 use App\Filament\Resources\Legalitas\Pages\EditLegalitas;
 use App\Filament\Resources\Legalitas\Pages\ListLegalitas;
-use App\Filament\Resources\Legalitas\Schemas\LegalitasForm;
 use App\Filament\Resources\Legalitas\Tables\LegalitasTable;
 use App\Models\Legalitas;
 use BackedEnum;
+use Filament\Forms\Components\FileUpload;
+use Filament\Forms\Components\TextInput;
 use Filament\Resources\Resource;
 use Filament\Schemas\Schema;
 use Filament\Support\Icons\Heroicon;
 use Filament\Tables\Table;
-use Filament\Forms\Components\TextInput;
-use Filament\Forms\Components\FileUpload;
 
 class LegalitasResource extends Resource
 {

@@ -3,7 +3,6 @@
 namespace App\Http\Controllers;
 
 use App\Models\Legalitas;
-use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Storage;
 
 class LegalitasController extends Controller
@@ -27,7 +26,7 @@ class LegalitasController extends Controller
         $legalitas = Legalitas::findOrFail($id);
 
         if (Storage::disk('public')->exists($legalitas->file)) {
-            return Storage::disk('public')->download($legalitas->file, $legalitas->nama . '.pdf');
+            return Storage::disk('public')->download($legalitas->file, $legalitas->nama.'.pdf');
         }
 
         return back()->with('error', 'File dokumen tidak ditemukan.');

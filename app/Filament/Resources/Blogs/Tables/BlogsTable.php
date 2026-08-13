@@ -5,9 +5,9 @@ namespace App\Filament\Resources\Blogs\Tables;
 use Filament\Actions\BulkActionGroup;
 use Filament\Actions\DeleteBulkAction;
 use Filament\Actions\EditAction;
-use Filament\Tables\Table;
-use Filament\Tables\Columns\TextColumn;
 use Filament\Tables\Columns\ImageColumn;
+use Filament\Tables\Columns\TextColumn;
+use Filament\Tables\Table;
 
 class BlogsTable
 {
@@ -18,8 +18,8 @@ class BlogsTable
                 TextColumn::make('judul'),
                 TextColumn::make('slug'),
                 ImageColumn::make('thumbnail')
-                ->disk('public'),
-                  TextColumn::make('isi')
+                    ->disk('public'),
+                TextColumn::make('isi')
                     ->label('Konten')
                     ->limit(150) // Batasi 150 karakter
                     ->wrap() // ✅ WRAP: turun ke bawah otomatis
@@ -27,9 +27,9 @@ class BlogsTable
                     ->width('400px'),
 
                 TextColumn::make('published_at')
-    ->dateTime('d M Y H:i')
-    ->sortable()
-    ->placeholder('-') // Jika NULL tampilkan "-"
+                    ->dateTime('d M Y H:i')
+                    ->sortable()
+                    ->placeholder('-'), // Jika NULL tampilkan "-"
 
             ])
             ->filters([

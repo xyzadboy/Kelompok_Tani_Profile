@@ -27,13 +27,12 @@ return new class extends Migration
             $table->date('tanggal_panen')->nullable()->comment('Tanggal perkiraan panen');
             $table->timestamps();
 
-                        // Index untuk performa query
+            // Index untuk performa query
             $table->index('kode_blok');
             $table->index('penanggung_jawab');
             $table->index('status');
             $table->index(['latitude', 'longitude']);
         });
-
 
     }
 

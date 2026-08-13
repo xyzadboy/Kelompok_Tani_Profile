@@ -23,7 +23,7 @@ class Blocks extends Model
         'telepon',
         'alamat',
         'tanggal_tanam',
-        'tanggal_panen'
+        'tanggal_panen',
     ];
 
     protected $casts = [
@@ -44,19 +44,19 @@ class Blocks extends Model
     public function scopeCari($query, $keyword)
     {
         return $query->where('kode_blok', 'LIKE', "%{$keyword}%")
-                     ->orWhere('penanggung_jawab', 'LIKE', "%{$keyword}%")
-                     ->orWhere('komoditas', 'LIKE', "%{$keyword}%");
+            ->orWhere('penanggung_jawab', 'LIKE', "%{$keyword}%")
+            ->orWhere('komoditas', 'LIKE', "%{$keyword}%");
     }
 
     // Accessor untuk menampilkan luas dengan satuan
     public function getLuasFormatAttribute()
     {
-        return $this->luas . ' Ha';
+        return $this->luas.' Ha';
     }
 
     // Accessor untuk koordinat
     public function getKoordinatAttribute()
     {
-        return $this->latitude . ', ' . $this->longitude;
+        return $this->latitude.', '.$this->longitude;
     }
 }

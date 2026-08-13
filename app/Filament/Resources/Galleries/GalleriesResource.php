@@ -5,16 +5,15 @@ namespace App\Filament\Resources\Galleries;
 use App\Filament\Resources\Galleries\Pages\CreateGalleries;
 use App\Filament\Resources\Galleries\Pages\EditGalleries;
 use App\Filament\Resources\Galleries\Pages\ListGalleries;
-use App\Filament\Resources\Galleries\Schemas\GalleriesForm;
 use App\Filament\Resources\Galleries\Tables\GalleriesTable;
 use App\Models\Galleries;
 use BackedEnum;
+use Filament\Forms\Components\FileUpload;
+use Filament\Forms\Components\TextInput;
 use Filament\Resources\Resource;
 use Filament\Schemas\Schema;
 use Filament\Support\Icons\Heroicon;
 use Filament\Tables\Table;
-use Filament\Forms\Components\TextInput;
-use Filament\Forms\Components\FileUpload;
 
 class GalleriesResource extends Resource
 {
