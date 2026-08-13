@@ -1,8 +1,10 @@
 # 📸 Preview & Halaman Aplikasi
 
-Berikut adalah dokumentasi antarmuka dan penjelasan fitur untuk tiap halaman pada platform web **Kelompok Tani Beruas Harapan**:
+Berikut adalah dokumentasi antarmuka dan penjelasan fitur untuk tiap halaman pada platform web **Kelompok Tani Beruas Harapan**, baik untuk tampilan **Frontend (Publik)** maupun **Admin Panel (Management)**:
 
 ---
+
+## 🌐 Antarmuka Publik (Frontend)
 
 ### 1. Halaman Beranda
 ![Beranda](assets/beranda.png)
@@ -52,3 +54,52 @@ Fitur unggulan berupa Sistem Informasi Geografis (GIS) interaktif untuk memetaka
 * **Interactive GIS Map:** Menampilkan polygon pemetaan kavling/blok lahan di atas peta citra satelit/topografi secara real-time.
 * **Tabel Informasi Lahan:** Menyajikan data tabular lengkap yang mencakup Kode Blok, Penanggung Jawab/Pengelola, Luas Lahan (Ha), Jenis Komoditas (Kelapa Sawit, Padi, Jagung, dll.), Status Garapan, dan tombol navigasi *Fokus Lokasi*.
 * **Sidebar Detail Lahan:** Menampilkan rincian data spasial ketika suatu blok dipilih pada peta, mencakup koordinat presisi, riwayat tanggal tanam/panen, deskripsi lahan, hingga integrasi rute navigasi Google Maps.
+
+---
+
+## 🛠️ Dashboard & Admin Panel
+
+Halaman manajemen internal (*backoffice*) yang digunakan oleh pengurus/admin untuk mengelola konten, data legalitas, galeri, kontak, hingga pemetaan spasial lahan.
+
+### 1. Manajemen Beranda & Konten Utamanya
+![Admin Beranda](assets/beranda_admin.png)
+
+**Deskripsi:**
+Pusat pengaturan konten utama halaman depan.
+* Mengelola statistik (*Quick Stats*), narasi sejarah, poin visi & misi, serta banner/hero section yang tampil di halaman publik.
+
+---
+
+### 2. Manajemen Legalitas & Dokumen
+![Admin Legalitas](assets/legalitas_admin.png)
+
+**Deskripsi:**
+Modul pengarsipan dan publikasi dokumen legalitas.
+* Memungkinkan admin untuk mengunggah (*upload*), memperbarui, atau menghapus berkas SK dan dokumen pendukung organisasi secara terstruktur.
+
+---
+
+### 3. Manajemen Galeri Dokumentasi
+![Admin Galeri](assets/galeri_admin.png)
+
+**Deskripsi:**
+Panel pengolahan repositori galeri kegiatan.
+* Fitur *Create, Read, Update, Delete* (CRUD) untuk mengunggah foto kegiatan lapangan, memberikan tag/kategori, serta menentukan deskripsi dan tanggal dokumentasi.
+
+---
+
+### 4. Manajemen Kontak & Pengurus
+![Admin Kontak](assets/kontak_admin.png)
+
+**Deskripsi:**
+Panel pengelolaan informasi kontak dan data pengurus.
+* Mengatur daftar nama pengurus, jabatan, nomor WhatsApp operasional, serta pengaturan informasi layanan konsultasi.
+
+---
+
+### 5. Manajemen Data Spatial & Blok Lahan (GIS Admin)
+![Admin Blok Lahan](assets/blok_admin.png)
+
+**Deskripsi:**
+Panel kontrol pemetaan spasial dan basis data kavling lahan.
+* Memungkinkan admin menginput koordinat/polygon baru, mengelola data pemilik/pengelola lahan, memperbarui jenis komoditas, status garapan, serta estimasi tanggal tanam dan panen.
